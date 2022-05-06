@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #E6E6EA;
+    font-family: 'Luckiest Guy',cursive;
+    height: 100%;
+}
+header{
+    background-color: #FE4A49;
+}
+.container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    position: relative;
+    padding: 20px 0;
+}
+.container .logo{
+    display: flex;
+    align-items: center;
+}
+.container .logo a{
+    color: white;
+    font-size: 40px;
+}
+.container .logo h1{
+    margin-left: 10px;
+    color: white;
+    font-size: 35px;
+}
+.container nav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    margin-top: 10px;
+}
+.container nav ul{
+    list-style-type: none;
+}
+.container nav ul li{
+    float: left;
+    padding: 0 20px;
+}
+.container nav ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+.current a::after{
+    content: '_';
+    font-size: 4px;
+    display: block;
+    background-color: white;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.wrapper .generate_equation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 2px 2px 6px 0px rgb(0 0 0 / 90%);
+    border-radius: 5px;
+    background: white;
+    font-size: 5.2vw;
+    margin: 10px 10px 0 10px;
+}
+.wrapper .generate_equation h1{
+    padding: 0 30px;
+}
+.wrapper .answer{
+    font-size: 5.2vw;
+}
+.wrapper .answer h1{
+   color: white;
+   text-align: center;
+   border-radius: 5px;
+   box-shadow: 2px 2px 6px 0px rgb(0 0 0 / 90%);
+   margin: 10px 10px 0 0;
+}
+.wrapper .answer #option1{
+    background-color: #FE4A49;
+}
+.wrapper .answer #option2{
+    background-color: #2AB7CA;
+}
+.wrapper .answer #option3{
+    background-color: #FED766;
+}

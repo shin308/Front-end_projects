@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Luckiest Guy', cursive;
+}
+body{
+    background-color: #E6E6EA;
+    overflow: hidden;
+}
+header{
+    background: #FE4A49;
+}
+.container{
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.container .nav i{
+    padding: 0 20px;
+    font-size: 40px;
+}
+.nav{
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.container .nav nav{
+    position: absolute;
+    right: 0;
+}
+.container .nav nav ul{
+    list-style-type: none;
+}
+.container .nav ul li{
+    float: left;
+    padding: 0 20px;
+
+}
+.container .nav nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.current a::after{
+    content: '_';
+    background: white;
+    font-size: 4px;
+    display: block;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 82% 18%;
+}
+.wrapper .equation{
+    background-color: white;
+    margin: 10px 10px 0 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 2px 2px 6px 0px rgb(0 0 0 / 90%);
+    font-size: 5.2vw;
+}
+.wrapper .equation h1{
+    padding: 0 10px;
+}
+.wrapper .answer{
+    font-size: 5.2vw;
+    color: white;
+}
+.wrapper .answer h1{
+    text-align: center;
+    margin: 10px 10px 0 0;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 0px rgb(0 0 0/90%);
+}
+.wrapper .answer #option1{
+    background-color:#FE4A49;
+}
+.wrapper .answer #option2{
+    background-color:#2BA7DA;
+}
+.wrapper .answer #option3{
+    background-color:#f86624;
+}

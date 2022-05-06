@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E6E6EA;
+    font-family: 'Luckiest Guy', cursive;
+}
+.container{
+    padding: 10px 30px;
+    overflow: hidden;
+    background: #FE4A49;
+}
+.container .logo i{
+    float: left;
+    font-size: 50px;
+    color: white;
+}
+.container .logo h1{
+    float: left;
+    font-size: 30px;
+    color: white;
+
+}
+.container nav{
+    float: right;
+    margin-top: 10px;
+}
+.container nav ul{
+    list-style-type: none;
+}
+.container nav ul li{
+    float: left;
+    padding: 0 15px;
+}
+.container a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    font-weight: 900;
+}
+.current a::after{
+    content: '_';
+    font-size: 2px;
+    background-color: white;
+    display: block;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 82% 18%;
+}
+.wrapper .equation{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 65px;
+    margin: 10px 10px 3px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 50%);
+}
+.wrapper .equation h1{
+    padding: 20px;
+}
+@media (max-width: 480px){
+.equation h1 {
+    display: inline;
+    padding: 10px;
+}
+}
+.wrapper .answer_options{
+    font-size: 67px;
+    margin-bottom: 3px;
+    margin-right: 10px;
+}
+.wrapper .answer_options h1{
+    cursor: pointer;
+    color: whitesmoke;
+    border-radius: 3px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 50%);
+}
+.wrapper .answer_options #option1{
+    background-color: red;
+}
+.wrapper .answer_options #option2{
+    background-color: blue;
+}
+.wrapper .answer_options #option3{
+    background-color: yellow;
+}

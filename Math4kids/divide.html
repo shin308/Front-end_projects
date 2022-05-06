@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Math 4 kids</title>
+</head>
+<body>
+    <audio class="myAudio">
+        <source src="wrong.mp3">
+    </audio>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class='bx bxs-trophy'></i>
+                <h1>Math 4 Kids</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ADD</a></li>
+                    <li><a href="subtract.html">SUBTRACT</a></li>
+                    <li><a href="multiply.html">MULTIPLY</a></li>
+                    <li class="current"><a href="divide.html">DIVIDE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="equation">
+            <h1 style="color: red;" id="num1">1</h1>
+            <h1 style="color: yellow;">/</h1>
+            <h1 style="color: blue;" id="num2">2</h1>
+            <h1 style="color: orange;">=</h1>
+            <h1 style="color: grey;">?</h1>
+        </div>
+        <div class="answer_options">
+            <h1 id="option1">3</h1>
+            <h1 id="option2">4</h1>
+            <h1 id="option3">5</h1>
+        </div>
+    </div>    
+    <script src="divide.js"></script>
+</body>
+</html>
